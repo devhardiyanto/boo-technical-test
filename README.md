@@ -1,40 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Boo Technical Test
 
-## Getting Started
-
-First, run the development server:
+## 1. Cara Menjalankan
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka [http://localhost:3000](http://localhost:3000) di browser.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 2. Durasi Pengerjaan
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Start: 16:36 WIB
+- End: 17:00 WIB (Approx)
+- Total: ~30 menit (Effective coding time)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 3. Fitur yang Selesai
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Recreate layout utama dengan **Shadcn UI** & **Tailwind CSS**
+- Mock API `/api/question`
+- Interaksi (choose option, like button)
+- Responsive basic (Mobile stack, Desktop centered)
+- Clean Architecture (Separation of UI, Feature components, Hooks)
 
-## Learn More
+## 4. Fitur yang Belum
 
-To learn more about Next.js, take a look at the following resources:
+- Komentar (Out of scope for this session)
+- Share modal
+- Animasi fancy (Basic transitions implemented)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 5. Apa yang akan Ditingkatkan
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **SSR/ISR**: Saat ini fetch di client side (`useEffect`), bisa dipindah ke `getServerSideProps` untuk SEO lebih baik.
+- **Testing**: Menambahkan Unit Test dengan Jest/React Testing Library.
+- **Error Handling**: UI Error state yang lebih informatif.
+- **A11y**: Meningkatkan aksesibilitas keyboard navigation.
